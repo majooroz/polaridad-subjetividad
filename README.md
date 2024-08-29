@@ -1,1 +1,1 @@
-# polaridad-subjetividad
+# tx2_analisis
