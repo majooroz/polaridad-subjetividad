@@ -3,9 +3,32 @@ from textblob import TextBlob
 from googletrans import Translator
 
 translator = Translator()
-st.title('Uso de textblob')
+st.markdown("""
+    <style>
+    .title {
+        font-family: 'Arial', sans-serif;
+        color: #2E86C1;
+    }
+    .header {
+        font-family: 'Courier New', Courier, monospace;
+        color: #FFFFFF;
+    }
+    .content {
+        font-family: 'Verdana', sans-serif;
+        color: #FFFFFF;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+st.markdown('<h1 class="title">¿Como te sientes hoy?</h1>', unsafe_allow_html=True)
+st.markdown('<h2 class="header">Uso de textblob</h2>', unsafe_allow_html=True)
+st.markdown('<p class="content">Por favor escribe en el campo de texto la frase que deseas analizar</p>', unsafe_allow_html=True)
+
+image = Image.open("analisis-de-sentimientoss.png")
+st.image(image,caption = "analisis-de-sentimientoss")
 
 st.subheader("Por favor escribe en el campo de texto la frase que deseas analizar")
+
 with st.sidebar:
                st.subheader("Polaridad y Subjetividad")
                ("""
