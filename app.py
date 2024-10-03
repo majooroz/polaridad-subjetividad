@@ -24,8 +24,8 @@ st.markdown('<h1 class="title">¿Como te sientes hoy?</h1>', unsafe_allow_html=T
 st.markdown('<h2 class="header">Uso de textblob</h2>', unsafe_allow_html=True)
 st.markdown('<p class="content">Por favor escribe en el campo de texto la frase que deseas analizar</p>', unsafe_allow_html=True)
 
-image = Image.open("analisis-de-sentimientoss.png")
-st.image(image,caption = "analisis-de-sentimientoss")
+image = Image.open("analisis.png")
+st.image(image,caption = "analisis")
 
 st.subheader("Por favor escribe en el campo de texto la frase que deseas analizar")
 
