@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 from textblob import TextBlob
 from googletrans import Translator
 
